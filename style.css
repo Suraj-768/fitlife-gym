@@ -1,0 +1,132 @@
+:root {
+  --primary: #2ecc71;
+  --dark: #222;
+  --light: #f9f9f9;
+  --text: #333;
+  --accent: #27ae60;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: var(--dark);
+  color: white;
+  padding: 1rem 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#hero {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+#hero .btn {
+  background: white;
+  color: var(--accent);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.bmi-box {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
+#bmi-result {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}

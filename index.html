@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife Gym</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>FitLife Gym</h1>
+      <nav>
+        <a href="#workouts">Workouts</a>
+        <a href="#diet">Diet</a>
+        <a href="#bmi">BMI Calculator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h2>Your Journey Starts Here</h2>
+        <p>Plan your fitness, diet, and health with us.</p>
+        <a href="#bmi" class="btn">Check Your BMI</a>
+      </div>
+    </section>
+
+    <section id="workouts" class="section">
+      <div class="container">
+        <h2>Workout Plans</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Beginner</h3>
+            <p>3x/week full body routine with basic movements.</p>
+          </div>
+          <div class="card">
+            <h3>Intermediate</h3>
+            <p>Push/Pull/Legs split with progressive overload.</p>
+          </div>
+          <div class="card">
+            <h3>Advanced</h3>
+            <p>5-6 day hypertrophy-focused programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diet" class="section">
+      <div class="container">
+        <h2>Diet Plans</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Weight Loss</h3>
+            <p>Low calorie, high protein meals.</p>
+          </div>
+          <div class="card">
+            <h3>Muscle Gain</h3>
+            <p>High-calorie, nutrient-rich foods for bulking.</p>
+          </div>
+          <div class="card">
+            <h3>Keto</h3>
+            <p>Low-carb, high-fat meals to burn fat effectively.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bmi" class="section">
+      <div class="container">
+        <h2>BMI Calculator</h2>
+        <div class="bmi-box">
+          <label for="height">Height (cm)</label>
+          <input type="number" id="height" placeholder="e.g. 170" />
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" placeholder="e.g. 65" />
+          <button onclick="calculateBMI()">Calculate BMI</button>
+          <p id="bmi-result"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FitLife Gym. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
